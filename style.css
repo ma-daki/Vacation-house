@@ -1,3 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+h1,
+h2,
+h3{
+  font-size: 50px;
+}
 .nav-link {
   border-left: 2px solid #000;
 }
@@ -10,7 +22,6 @@
   height: 100vh;
   width: 100%;
 }
-
 .first-section::before {
   content: "";
   position: absolute;
@@ -18,10 +29,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Optional: black transparent overlay */
+  background: rgba(0, 0, 0, 0.719); /* Optional: black transparent overlay */
   z-index: 1;
 }
-
 .first-section h1 {
   color: white;
   font-size: 2.5rem;
@@ -34,25 +44,18 @@
   height: 200px; /* adjust as needed */
   overflow: hidden;
 }
-
-/* .swiper-slide {
-  width: auto;
-} */
-
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .second-section {
   margin: 40px 20px; /* Smaller margins for better responsiveness */
   text-align: start;
   line-height: 1.5; /* Normal line spacing */
 }
-
 .second-section h2 {
-  font-size: 2rem; /* Slightly reduced for smaller screens */
+  font-size: 50px; /* Slightly reduced for smaller screens */
   margin-bottom: 20px;
 }
 .sec-two {
@@ -65,7 +68,6 @@
   justify-content: start;
   text-align: start;
 }
-
 .sec-two::before {
   content: "";
   position: absolute;
@@ -76,16 +78,15 @@
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-
 .sec-two .content {
   position: relative;
   z-index: 2;
   color: #fff;
   padding: 40px 80px;
 }
-
-.sec-two .btn {
+.btn {
   background-color: #fff;
+  font-weight: bold;
   color: #000;
   padding: 10px 20px;
   text-decoration: none;
@@ -94,6 +95,11 @@
   margin-top: 20px;
   display: inline-block;
 }
+.btn:hover{
+  background-color: #858484ef;
+  color: #000;
+}
+
 .footer{
   padding: 50px;
 }
@@ -107,7 +113,7 @@
 
 @media (min-width: 768px) {
   .second-section {
-    margin: 80px; /* Add back large margin only on medium+ screens */
+    margin: 80px;
   }
 
   .second-section h2 {

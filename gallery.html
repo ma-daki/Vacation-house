@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" style="margin-top: 0; margin-bottom: 0; border-bottom: 1px solid #000;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Store Guesthouse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-5 active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5" href="information.html">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bg-black text-white px-5" href="#">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- gallery -->
+    <div style="margin-top: 150px; margin-bottom: 10px; margin-left: 50px;">
+      <h3>Gallery</h3>
+    </div>
+    <section class="first-section">
+      <div style="position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;">
+        <h1 style="font-size: 50px;">Experience Shore Guesthouse. <br> Explore our gallery and start planning.</h1>
+      </div>
+    </section>
+
+    <section class="second-section" style="position: relative;">
+      <div class="sec-text text-center mb-4">
+        <p>Exterior Views</p>
+        <h2>Welcome to Shore Guesthouse.</h2>
+      </div>
+
+      <div class="imgs container">
+        <!-- Top two images side-by-side on large screens, stacked on small -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-6 col-12">
+            <img src="imgs/gallery 1.jpg" alt="" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4 / 3;">
+          </div>
+          <div class="col-lg-6 col-12">
+            <img src="imgs/gallery 2.jpg" alt="" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 5 / 6;">
+          </div>
+        </div>
+
+        <!-- Large image full width -->
+        <div class="mt-4 mb-4">
+          <img src="imgs/img 3.jpg" alt="" class="img-fluid w-100" style="height: 500px; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <section class="third-section">
+      <div class="container">
+        <div class="sec-text text-white my-lg-5 my-3">
+          <p>Interior Views</p>
+          <h2>Uncover the  guesthouse’s charm and <br> character.</h2>
+        </div>
+      </div>
+      <section class="sectionSix">
+        <div class="mini-sec container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10">
+              <!-- Navigation Pills -->
+              <ul class="nav nav-pills p-3 mb-4 d-flex justify-content-center gap-1 images" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-dark fw-bold active" id="pills-North-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-North" type="button" role="tab" aria-controls="pills-North"
+                    aria-selected="true"><img src="imgs/img 1.jpg" alt=""></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-dark fw-bold" id="pills-South-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-South" type="button" role="tab" aria-controls="pills-South"
+                    aria-selected="false"><img src="imgs/img 2.jpg" alt=""></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-dark fw-bold" id="pills-East-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-East" type="button" role="tab" aria-controls="pills-East"
+                    aria-selected="false"><img src="imgs/img 3.jpg" alt=""></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-dark fw-bold" id="pills-world-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-world" type="button" role="tab" aria-controls="pills-world"
+                    aria-selected="false"><img src="imgs/img 4.jpg" alt=""></button>
+                </li>
+              </ul>
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-North" role="tabpanel">
+                  <img src="imgs/img 1.jpg" alt=" " class="img-fluid mx-auto d-block">
+                </div>
+                <div class="tab-pane fade" id="pills-South" role="tabpanel">
+                  <img src="imgs/img 2.jpg" alt=" " class="img-fluid mx-auto d-block">
+                </div>
+                <div class="tab-pane fade" id="pills-East" role="tabpanel">
+                  <img src="imgs/img 3.jpg" alt=" " class="img-fluid mx-auto d-block">
+                </div>
+                <div class="tab-pane fade" id="pills-world" role="tabpanel">
+                  <img src="imgs/img 4.jpg" alt=" " class="img-fluid mx-auto d-block">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  <section class="fourth-section">
+    <div class="container sec-text d-flex flex-column justify-content-center mb-5">
+        <p>The Neighborhood</p>
+        <h2>Wander its winding streets and soak in the magic.</h2>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper gap-lg-5 gap-3">
+        <div class="swiper-slide"><img src="imgs/img 1.jpg" alt="Image 1" /></div>
+        <div class="swiper-slide"><img src="imgs/img 2.jpg" alt="Image 2" /></div>
+        <div class="swiper-slide"><img src="imgs/img 3.jpg" alt="Image 3" /></div>
+        <div class="swiper-slide"><img src="imgs/img 4.jpg" alt="Image 4" /></div>
+        <div class="swiper-slide"><img src="imgs/img 5.jpg" alt="Image 5" /></div>
+        <div class="swiper-slide"><img src="imgs/img 6.jpg" alt="Image 6" /></div>
+        <div class="swiper-slide"><img src="imgs/img 7.jpg" alt="Image 7" /></div>
+        <div class="swiper-slide"><img src="imgs/img 8.jpg" alt="Image 8" /></div>
+        <div class="swiper-slide"><img src="imgs/img 9.jpg" alt="Image 9" /></div>
+        <div class="swiper-slide"><img src="imgs/img 10.jpg" alt="Image 10" /></div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+
+    <div class="classic my-5 w-100">
+      <img src="imgs/bca4bbe3-c647-4f31-bb7c-8254e942d248.jpg" alt="">
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer bg-black text-white">
+      <div class="content">
+        <p>Shore Guesthouse</p>
+        <hr style="width: 50px; border: 1px solid white;">
+        <p>© 2025 All rights reserved.</p>
+        <a href="" style="color: white;">hello@figma.com</a>
+        <p>(646) 555-4567</p>
+      </div>
+      <hr>
+      <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    slidesPerView: '5',         // Show all images in one line
+    speed: 8000,                   // Slow scroll speed (ms)
+    autoplay: {
+      delay: 0,                    // Continuous movement
+      disableOnInteraction: false,
+    },
+    freeMode: true,                // Smooth, non-snapping slide
+    freeModeMomentum: false,       // No bounce at edges
+    grabCursor: false,
+    allowTouchMove: false,         // Optional: disable manual swiping
+  });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</html>
