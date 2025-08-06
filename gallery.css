@@ -30,7 +30,7 @@ h3 {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Optional: black transparent overlay */
+  background: rgba(0, 0, 0, 0.719); /* Optional: black transparent overlay */
   z-index: 1;
 }
 
